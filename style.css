@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(255, 255, 255, 0.87);
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 12rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(122, 107, 84);
+  }
+
+.navbar-brand {
+    size: 10px;
+  }
+
+  .navbar-brand img {
+    width: 100px; 
+    height: auto;
+  }
+
+  /* Footer */
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    margin-top: 3%;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
