@@ -1,38 +1,93 @@
 body {
-    background-color: rgba(255, 255, 255, 0.87);
-    align-items: center;
-    font-family: "Playfair Display", serif;
-    font-style: normal;
+  font-family: 'Playfair Display', serif;
+  background-color: black;
 }
 
-h1 {
-    font-size: 12rem;
-    color: white;
-    text-shadow: 2px 2px 2px rgb(122, 107, 84);
-  }
-
+.navbar {
+background-color: #fff !important;
+}
 .navbar-brand {
-    size: 10px;
-  }
+font-size: 1.5rem;
+font-weight: bold;
+color: #000;
+}
+.nav-link {
+font-size: 1.1rem;
+color: #000;
+}
+section {
+padding: 60px 0;
+}
+h2 {
+color: white;
+}
+p {
+color: #6c757d;
+}
+footer {
+background-color: #343a40;
+color: #fff;
+}
 
-  .navbar-brand img {
-    width: 100px; 
-    height: auto;
-  }
+li { 
+color: white;
+}
 
-  /* Footer */
-.footer-basic {
-    padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
-    margin-top: 3%;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
+.image-button-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.image-button {
+position: relative;
+border: none; /* Remove default button border */
+background: none; /* Remove default button background */
+padding: 0; /* Remove default button padding */
+cursor: pointer; /* Change cursor to pointer on hover */
+
+/* Optional: Adjust width and height of the button */
+width: 300px;
+height: 300px;
+}
+
+.hero {
+  position: relative;
+  height: 75vh; 
+  background-image: url('Images/2023-02-09-e-lee-philadelphia-temple-university-broad-and-montgomery.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.overlay h2 {
+  margin: 0;
+}
+
+.education {
+  background-color: black;
+}
+
+#brand-link {
+  position: fixed;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  display: block;
+}
+
+#brand-logo {
+  width: 50px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
