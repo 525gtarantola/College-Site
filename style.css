@@ -86,8 +86,16 @@ height: 300px;
   display: block;
 }
 
+#brand-background {
+  background-color: white; /* White background for the circle */
+  border-radius: 50%; /* Make the background circular */
+  padding: 5px; /* Space around the image inside the circle */
+  display: inline-block; /* Ensure the circle is as small as necessary */
+}
+
 #brand-logo {
   width: 50px; /* Adjust the size of the logo */
   height: auto; /* Maintain aspect ratio */
-  cursor: pointer; /* Change cursor to pointer to indicate clickability */
+  display: block; /* Remove any inline spacing issues */
 }
+
