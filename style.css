@@ -138,3 +138,25 @@ section {
   color: #000; /* Ensure the text color is appropriate */
   padding: 0.5rem 1rem; /* Optional: adjust padding if needed */
 }
+
+.hehe-row {
+  position: relative;
+  top: 50px;
+}
+
+.hehe-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.hehe1 {
+  background: url(imgs/STIT-why-stevens.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  height:450px;
+}
+.hehe2 {
+  height:450px;
+  border: #9D1535 5px solid;
+  font-family: 'Playfair Display', serif;
+}
