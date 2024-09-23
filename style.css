@@ -4,20 +4,38 @@ body {
 }
 
 .navbar {
-background-color: #fff !important;
+  background-color: #fff !important;
 }
+
 .navbar-brand {
-font-size: 1.5rem;
-font-weight: bold;
-color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
 }
+
 .nav-link {
-font-size: 1.1rem;
-color: #000;
+  font-size: 1.1rem;
+  color: #000;
 }
 
 section {
-padding: 60px 0;
+  padding: 60px 0;
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.career-overview,
+.academic-programs,
+.student-life,
+.video-section {
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-image {
+  width: 100%; /* Make it responsive */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
 h1 {
@@ -25,36 +43,36 @@ h1 {
 }
 
 h2 {
-color: white;
+  color: white;
 }
 
 p {
-color: white;
+  color: white;
 }
 
 footer {
-background-color: #343a40;
-color: #fff;
+  background-color: #343a40;
+  color: #fff;
 }
 
 li { 
-color: rgb(177, 173, 173);
+  color: rgb(177, 173, 173);
 }
 
 .image-button-container {
-display: flex;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .image-button {
-position: relative;
-border: none; 
-background: none; 
-padding: 0; 
-cursor: pointer; 
-width: 300px;
-height: 300px;
+  position: relative;
+  border: none; 
+  background: none; 
+  padding: 0; 
+  cursor: pointer; 
+  width: 300px;
+  height: 300px;
 }
 
 .hero {
@@ -84,13 +102,6 @@ height: 300px;
   background-color: black;
 }
 
-#brand-link {
-  position: fixed;
-  top: 10px; 
-  left: 10px; 
-  z-index: 1000; 
-  display: block;
-}
 
 #brand-background {
   background-color: white; 
@@ -99,9 +110,18 @@ height: 300px;
   display: inline-block; 
 }
 
+#brand-link {
+  position: fixed;
+  bottom: 20px; /* Position it above the bottom of the viewport */
+  right: 20px;  /* Position it to the right */
+  z-index: 1000; 
+  opacity: 0;   /* Start invisible */
+  transition: opacity 0.5s; /* Smooth transition for opacity */
+}
+
 #brand-logo {
   width: 90px; 
-  height: auto;
+  height: auto; 
   display: block; 
 }
 
@@ -121,42 +141,6 @@ iframe {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  border: 1px solid white; 
-  padding: 20px;
-  text-align: center;
-}
-
-
-section {
-  margin-bottom: 20px; /* Space between sections */
-}
-
-.navbar-brand {
-  font-size: 3rem; /* Adjust size as needed */
-  font-weight: bold; /* Optional: makes the text bold */
-  color: #000; /* Ensure the text color is appropriate */
-  padding: 0.5rem 1rem; /* Optional: adjust padding if needed */
-}
-
-.hehe-row {
-  position: relative;
-  top: 50px;
-}
-
-.hehe-text {
-  font-family: 'Playfair Display', serif;
-}
-
-.hehe1 {
-  background: url(imgs/STIT-why-stevens.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center, center;
-  height:450px;
-}
-.hehe2 {
-  height:450px;
-  border: #9D1535 5px solid;
-  font-family: 'Playfair Display', serif;
+.navbar-brand img {
+  height: 250px; /* Adjust the height */
 }
